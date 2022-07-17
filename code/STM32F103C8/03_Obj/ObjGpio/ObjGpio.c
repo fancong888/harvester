@@ -60,6 +60,7 @@ void ObjGpio_BatHold(void)
 void ObjGpio_LedDeal(void)
 {
     static unsigned short us_runTimer = 0;
+    static unsigned short us_batTimer = 0;
 
     //run÷∏ æµ∆
     us_runTimer += TIME_10MS;
@@ -75,7 +76,40 @@ void ObjGpio_LedDeal(void)
     {
         us_runTimer = 0;
     }
+   
+    if(ul_objAdc_vBat < 3000)
+    {
+        us_batTimer += TIME_10MS;
+        if(us_batTimer <= 100)
+        {
+            un_objGpio_output.bit.batLed = 1;
+        }
+        else if(us_batTimer < 200)
+        {
+            un_objGpio_output.bit.batLed = 0;
+        }
+        else
+        {
+            us_batTimer = 0;
+        }
+    }
+    else
+    {
+        un_objGpio_output.bit.batLed = 1;
+    }
 }
+
+//==================================================
+//Descriptions:			
+//input parameters:		
+//Output parameters:
+//Returned value:
+//==================================================
+void ObjGpio_InputDeal(void)
+{
+    un_objGpio_input.all = (unsigned short)PhyGpio_ReadFromPeriph();
+}
+
 
 //==================================================
 //Descriptions:			

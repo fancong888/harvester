@@ -7,6 +7,23 @@
 #define TIME_100US	(TIME_1US * 100)
 #define TIME_1MS	(TIME_1US * 1000)
 
+#define bit0  0x0001
+#define bit1  0x0002
+#define bit2  0x0004
+#define bit3  0x0008
+#define bit4  0x0010
+#define bit5  0x0020
+#define bit6  0x0040
+#define bit7  0x0080
+#define bit8  0x0100
+#define bit9  0x0200
+#define bit10 0x0400
+#define bit11 0x0800
+#define bit12 0x1000
+#define bit13 0x2000
+#define bit14 0x4000
+#define bit15 0x8000
+
 
 #define TIME_2MS       2
 #define TIME_10MS     10

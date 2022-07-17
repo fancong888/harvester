@@ -14,14 +14,24 @@ union GPIO_OUTPUT
     }bit;
 };
 
+union GPIO_INPUT
+{
+    unsigned short all; 	
+    struct 
+    {
+        unsigned short charge: 1;                                        
+        unsigned short rsvd1: 15;                       
+    }bit;
+};
 
 
 
 /*******************************Function***************************************/
 void PhyGpio_ParamInit(void);
 void PhyGpio_PeriphInit(void);
-void PhyGpio_ReadFromPeriph(unsigned long *gpioInputValue);
+unsigned long PhyGpio_ReadFromPeriph(void);
 void PhyGpio_WriteToPeriph(union GPIO_OUTPUT *pOutput);
+void PhyIo_DiDeal(void);
 
 
 

@@ -8,6 +8,7 @@
 
 /*******************************Function***************************************/
 void ObjOLED_MainDeal(void);
+void ObjOLED_DataDeal(void);
 
 
 

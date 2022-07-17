@@ -29,6 +29,8 @@ int main()
             {
                 us_timerTicker = 0;
 
+                PhyIo_DiDeal();
+                ObjGpio_InputDeal();
                 ObjSci_Uart1MainDeal();
                 ObjSci_Uart2MainDeal();
                 ObjAdc_MainDeal();
@@ -43,7 +45,8 @@ int main()
                         break;
                     }	
                     case 1:
-                    {                     
+                    {         
+                        ObjOLED_DataDeal();
                         uc_dealStep++;
                         break;
                     }					

@@ -2,6 +2,10 @@
 #define _OBJOLED_H_
 
 /*******************************Definition***************************************/
+#define OLED_X_MAX   21
+#define OLED_DATA_FILTER   1000  //MS
+
+
 unsigned long ul_objOLED_vBat;
 unsigned long ul_objOLED_current;
 unsigned long ul_objOLED_pGood;
