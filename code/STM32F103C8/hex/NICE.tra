@@ -1,0 +1,55 @@
+*** Creating Trace Output File '..\hex\NICE.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\hex\startup_stm32f10x_hd.o"'
+### List of Objects: adding '"..\hex\main.o"'
+### List of Objects: adding '"..\hex\phycan.o"'
+### List of Objects: adding '"..\hex\phyadc.o"'
+### List of Objects: adding '"..\hex\phyuart.o"'
+### List of Objects: adding '"..\hex\phyterm.o"'
+### List of Objects: adding '"..\hex\funinit.o"'
+### List of Objects: adding '"..\hex\funcan.o"'
+### List of Objects: adding '"..\hex\funrs485.o"'
+### List of Objects: adding '"..\hex\funio.o"'
+### List of Objects: adding '"..\hex\funscikey.o"'
+### List of Objects: adding '"..\03_Fun\Protect\pro_protect.o"'
+### List of Objects: adding '"..\hex\core_cm3.o"'
+### List of Objects: adding '"..\hex\misc.o"'
+### List of Objects: adding '"..\hex\stm32f10x_adc.o"'
+### List of Objects: adding '"..\hex\stm32f10x_bkp.o"'
+### List of Objects: adding '"..\hex\stm32f10x_can.o"'
+### List of Objects: adding '"..\hex\stm32f10x_cec.o"'
+### List of Objects: adding '"..\hex\stm32f10x_crc.o"'
+### List of Objects: adding '"..\hex\stm32f10x_dac.o"'
+### List of Objects: adding '"..\hex\stm32f10x_dbgmcu.o"'
+### List of Objects: adding '"..\hex\stm32f10x_dma.o"'
+### List of Objects: adding '"..\hex\stm32f10x_exti.o"'
+### List of Objects: adding '"..\hex\stm32f10x_flash.o"'
+### List of Objects: adding '"..\hex\stm32f10x_fsmc.o"'
+### List of Objects: adding '"..\hex\stm32f10x_gpio.o"'
+### List of Objects: adding '"..\hex\stm32f10x_i2c.o"'
+### List of Objects: adding '"..\hex\stm32f10x_it.o"'
+### List of Objects: adding '"..\hex\stm32f10x_iwdg.o"'
+### List of Objects: adding '"..\hex\stm32f10x_pwr.o"'
+### List of Objects: adding '"..\hex\stm32f10x_rcc.o"'
+### List of Objects: adding '"..\hex\stm32f10x_rtc.o"'
+### List of Objects: adding '"..\hex\stm32f10x_sdio.o"'
+### List of Objects: adding '"..\hex\stm32f10x_spi.o"'
+### List of Objects: adding '"..\hex\stm32f10x_tim.o"'
+### List of Objects: adding '"..\hex\stm32f10x_usart.o"'
+### List of Objects: adding '"..\hex\stm32f10x_wwdg.o"'
+### List of Objects: adding '"..\hex\system_stm32f10x.o"'
+### List of Objects: adding '"..\hex\修改记录.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "..\hex\startup_stm32f10x_hd.o" "..\hex\main.o" "..\hex\phycan.o" "..\hex\phyadc.o" "..\hex\phyuart.o" "..\hex\phyterm.o" "..\hex\funinit.o" "..\hex\funcan.o" "..\hex\funrs485.o" "..\hex\funio.o" "..\hex\funscikey.o" "..\03_Fun\Protect\pro_protect.o" "..\hex\core_cm3.o" "..\hex\misc.o" "..\hex\stm32f10x_adc.o" "..\hex\stm32f10x_bkp.o" "..\hex\stm32f10x_can.o" "..\hex\stm32f10x_cec.o" "..\hex\stm32f10x_crc.o" "..\hex\stm32f10x_dac.o" "..\hex\stm32f10x_dbgmcu.o" "..\hex\stm32f10x_dma.o" "..\hex\stm32f10x_exti.o" "..\hex\stm32f10x_flash.o" "..\hex\stm32f10x_fsmc.o" "..\hex\stm32f10x_gpio.o" "..\hex\stm32f10x_i2c.o" "..\hex\stm32f10x_it.o" "..\hex\stm32f10x_iwdg.o" "..\hex\stm32f10x_pwr.o" "..\hex\stm32f10x_rcc.o" "..\hex\stm32f10x_rtc.o" "..\hex\stm32f10x_sdio.o" "..\hex\stm32f10x_spi.o" "..\hex\stm32f10x_tim.o" "..\hex\stm32f10x_usart.o" "..\hex\stm32f10x_wwdg.o" "..\hex\system_stm32f10x.o" "..\hex\修改记录.o" --strict --scatter "..\hex\NICE.sct" 
+--autoat --summary_stderr --info summarysizes -o "..\hex\NICE.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\hex\NICE.axf'
+### ADS-LD Command File: '..\hex\NICE.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\hex\NICE.lnp', Handle=0x00000320
+### Writing '.lnp' file
+### ADS-LD Command file '..\hex\NICE.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

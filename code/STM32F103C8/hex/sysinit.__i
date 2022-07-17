@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\08_Library\inc -I..\02_Phy -I..\03_Obj -I..\03_Obj\ObjSci -I..\03_Obj\ObjGpio -I..\03_Obj\ObjIap -I..\08_Library -I..\04_Fun -I "D:\Programs\Keil_4\ARM\INC" -I "D:\Programs\Keil_4\ARM\INC\ST\STM32F10x" -o "..\hex\sysinit.o" --omf_browse "..\hex\sysinit.crf" --depend "..\hex\sysinit.d" "..\01_Main\SysInit.c"

@@ -1,0 +1,46 @@
+..\hex\main.o: ..\01_Main\Main.c
+..\hex\main.o: ..\01_Main\Main.h
+..\hex\main.o: ..\02_Phy\PublicPhy.h
+..\hex\main.o: E:\Program Files (x86)\keil\ARM\ARMCC\Bin\..\include\stdio.h
+..\hex\main.o: E:\Program Files (x86)\keil\ARM\ARMCC\Bin\..\include\string.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x.h
+..\hex\main.o: ..\08_Library\inc\core_cm3.h
+..\hex\main.o: E:\Program Files (x86)\keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\hex\main.o: ..\08_Library\inc\system_stm32f10x.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_conf.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_adc.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_bkp.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_can.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_cec.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_crc.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_dac.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_dbgmcu.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_dma.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_exti.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_flash.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_fsmc.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_gpio.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_i2c.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_iwdg.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_pwr.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_rcc.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_rtc.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_sdio.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_spi.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_tim.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_usart.h
+..\hex\main.o: ..\08_Library\inc\stm32f10x_wwdg.h
+..\hex\main.o: ..\08_Library\inc\misc.h
+..\hex\main.o: ..\02_Phy\PhySys\Public_PhySys.h
+..\hex\main.o: ..\02_Phy\PhyGpio\Public_PhyGpio.h
+..\hex\main.o: ..\02_Phy\PhyIwdg\Public_PhyIwdg.h
+..\hex\main.o: ..\02_Phy\PhyUart\Public_PhyUart.h
+..\hex\main.o: ..\02_Phy\PhyAdc\Public_PhyAdc.h
+..\hex\main.o: ..\02_Phy\OLED_I2C\Public_OLED_I2C.h
+..\hex\main.o: ..\03_Obj\PublicObj.h
+..\hex\main.o: ..\03_Obj\ObjGpio\Public_ObjGpio.h
+..\hex\main.o: ..\03_Obj\ObjSci\Public_ObjSci.h
+..\hex\main.o: ..\03_Obj\ObjAdc\Public_ObjAdc.h
+..\hex\main.o: ..\03_Obj\ObjOLED\Public_ObjOLED.h
+..\hex\main.o: ..\04_Fun\Public_Function.h

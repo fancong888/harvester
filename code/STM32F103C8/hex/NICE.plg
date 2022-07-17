@@ -1,0 +1,14 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\MCTC-CTB-A-轿顶板\CTB-C\2013年非标\CTB-A的250K非标-徐忆平\CTB-A-10.02-F00.00-20131227\build\NICE.uvproj
+Project File Date:  12/27/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+Program Size: Code=32304 RO-data=352 RW-data=220 ZI-data=3212  
+FromELF: creating hex file...
+"..\hex\NICE.axf" - 0 Error(s), 0 Warning(s).

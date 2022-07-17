@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\08_Library\inc -I..\02_Phy -I..\03_Fun -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ST\STM32F10x" -o "..\hex\phyflash.o" --omf_browse "..\hex\phyflash.crf" --depend "..\hex\phyflash.d" "..\02_Phy\PhyFlash\PhyFlash.c"
