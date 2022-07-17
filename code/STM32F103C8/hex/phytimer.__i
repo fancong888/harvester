@@ -1,1 +1,0 @@
--c --cpu Cortex-M3 -O0 --apcs=interwork -I..\08_Library\inc -I..\02_Physical -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ST\STM32F10x" -o "..\hex\phytimer.o" --depend "..\hex\phytimer.d" "..\02_Physical\PhyTimer\PhyTimer.c"
