@@ -46,7 +46,6 @@ int main()
                     }	
                     case 1:
                     {         
-                        ObjOLED_DataDeal();
                         uc_dealStep++;
                         break;
                     }					

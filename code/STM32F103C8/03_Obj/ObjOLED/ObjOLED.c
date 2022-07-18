@@ -16,7 +16,7 @@ void ObjOLED_MainDeal(void)
     unsigned char len = 0;
     char uc_strDis[20];
     char uc_str[5];
-    static unsigned short us_step = 0;
+    static unsigned short us_step = 0, us_stepBak = 0;
     
     memset(uc_strDis, 0, sizeof(uc_strDis));
     
@@ -172,88 +172,16 @@ void ObjOLED_MainDeal(void)
             break;
         }
     }
-}
 
-
-//==================================================
-//Descriptions:				
-//input parameters:	
-//Output parameters:
-//Returned value:
-//==================================================
-void ObjOLED_DataDeal(void)
-{
-    static unsigned short us_changeTimer[5];
-    
-    if(ul_objOLED_vBat != ul_objAdc_vBat)
+    if(us_step != us_stepBak)
     {
-        us_changeTimer[0] += TIME_10MS;
-    }
-    else
-    {
-        us_changeTimer[0] = 0;
-    }
-    if(us_changeTimer[0] >= OLED_DATA_FILTER)
-    {
-        us_changeTimer[0] = 0;
         ul_objOLED_vBat = ul_objAdc_vBat;
-    }
-
-    if(ul_objOLED_vin != ul_objAdc_vin)
-    {
-        us_changeTimer[1] += TIME_10MS;
-    }
-    else
-    {
-        us_changeTimer[1] = 0;
-    }
-    if(us_changeTimer[1] >= OLED_DATA_FILTER)
-    {
-        us_changeTimer[1] = 0;
         ul_objOLED_vin = ul_objAdc_vin;
-    }
-
-    if(ul_objOLED_outputLtc != ul_objAdc_outputLtc)
-    {
-        us_changeTimer[2] += TIME_10MS;
-    }
-    else
-    {
-        us_changeTimer[2] = 0;
-    }
-    if(us_changeTimer[2] >= OLED_DATA_FILTER)
-    {
-        us_changeTimer[2] = 0;
         ul_objOLED_outputLtc = ul_objAdc_outputLtc;
-    }
-
-    if(ul_objOLED_pGood != ul_objAdc_pGood)
-    {
-        us_changeTimer[3] += TIME_10MS;
-    }
-    else
-    {
-        us_changeTimer[3] = 0;
-    }
-    if(us_changeTimer[3] >= OLED_DATA_FILTER)
-    {
-        us_changeTimer[3] = 0;
         ul_objOLED_pGood = ul_objAdc_pGood;
-    }
-
-    if(ul_objOLED_current != ul_objAdc_current)
-    {
-        us_changeTimer[4] += TIME_10MS;
-    }
-    else
-    {
-        us_changeTimer[4] = 0;
-    }
-    if(us_changeTimer[4] >= OLED_DATA_FILTER)
-    {
-        us_changeTimer[4] = 0;
         ul_objOLED_current = ul_objAdc_current;
     }
+    us_stepBak = us_step;
 }
 
 
