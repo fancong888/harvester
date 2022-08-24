@@ -19,8 +19,9 @@ union GPIO_INPUT
     unsigned short all; 	
     struct 
     {
-        unsigned short charge: 1;                                        
-        unsigned short rsvd1: 15;                       
+        unsigned short charge: 1;
+        unsigned short powerHold: 1;
+        unsigned short rsvd1: 14;                       
     }bit;
 };
 

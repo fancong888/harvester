@@ -23,13 +23,14 @@ void PhyGpio_PeriphInit (void)
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11; 
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPD;
-	GPIO_Init(GPIOB, &GPIO_InitStructure);
+       GPIO_Init(GPIOA, &GPIO_InitStructure);  //电源输入
+	GPIO_Init(GPIOB, &GPIO_InitStructure);  //电池充电
 	
 //输出点部分 
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10; 
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13; 
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-	GPIO_Init(GPIOB, &GPIO_InitStructure);
+	GPIO_Init(GPIOC, &GPIO_InitStructure);
 
 //指示灯
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8; //RUN led
@@ -80,7 +81,8 @@ void PhyIo_DiDeal(void)
     unsigned long ul_ioInputTemp = 0;
 
     ul_ioInputTemp |=((GPIOB->IDR&bit11)>>11);	
-    ul_ioInputTemp ^= 0x00000001;
+    ul_ioInputTemp |=((GPIOA->IDR&bit11)>>10);
+    ul_ioInputTemp ^= 0x00000003;
 
     for(i = 0; i < PHYIO_DI_NUM; i++)
     {
@@ -110,13 +112,13 @@ void PhyIo_DiDeal(void)
 //==================================================
 void PhyGpio_WriteToPeriph(union GPIO_OUTPUT *pOutput)
 {
-	if(pOutput->bit.powerHold)//PB10  hold 	
+	if(pOutput->bit.powerHold)//PC13  hold 	
 	{
-		GPIO_SetBits(GPIOB, GPIO_Pin_10);
+		GPIO_SetBits(GPIOC, GPIO_Pin_13);
 	}
 	else		
 	{		
-		GPIO_ResetBits(GPIOB, GPIO_Pin_10);  	
+		GPIO_ResetBits(GPIOC, GPIO_Pin_13);  	
 	}
 	
 	if(pOutput->bit.runLed)//PA8  RUN LED

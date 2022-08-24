@@ -12,11 +12,11 @@
 //==================================================
 void ObjAdc_MainDeal(void)
 {	
-    ul_objAdc_vBat = PhyAdc_GetValue(0)*1410ul/100;
+    ul_objAdc_vBat = PhyAdc_GetValue(0)*1303ul/100;
     ul_objAdc_current = PhyAdc_GetValue(1)*1000ul/100;
-    ul_objAdc_pGood = PhyAdc_GetValue(2)*1000ul/100;
-    ul_objAdc_outputLtc = PhyAdc_GetValue(3)*1110ul/100;
-    ul_objAdc_vin = PhyAdc_GetValue(4)*5590ul/100; 
+    ul_objAdc_pGood = PhyAdc_GetValue(2)*1097ul/100;
+    ul_objAdc_outputLtc = PhyAdc_GetValue(3)*1097ul/100;
+    ul_objAdc_vin = PhyAdc_GetValue(4)*5710ul/100; 
 
     ObjAdc_CurrentDeal();
 }

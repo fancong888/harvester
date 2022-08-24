@@ -39,13 +39,18 @@ void ObjGpio_BatHold(void)
     
     un_objGpio_output.bit.powerHold = 1;
     
-    if(un_objGpio_output.bit.powerHold)
+    if(un_objGpio_input.bit.powerHold)
     {
         ul_holdTimer += TIME_10MS;
     }
-    if(ul_holdTimer >= TIME_1MIN*30)
+    else
     {
-        ul_holdTimer = TIME_1MIN*30;
+        ul_holdTimer = 0;
+    }
+    
+    if(ul_holdTimer >= TIME_3S)
+    {
+        ul_holdTimer = TIME_3S;
         un_objGpio_output.bit.powerHold = 0;
     }
 }
